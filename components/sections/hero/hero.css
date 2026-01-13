@@ -1,18 +1,60 @@
 .hero {
-    height: 80vh;
+    min-height: 85vh;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     background: radial-gradient(circle at top right, var(--secondary-color), transparent 40%),
                 radial-gradient(circle at bottom left, var(--accent-color), transparent 40%);
+    padding: 2rem;
 }
 
 .hero-content {
-    max-width: 600px;
+    max-width: 800px;
+    width: 100%;
     background: var(--glass);
-    padding: 3rem 6px 3rem;
-    border-radius: 80px;
+    padding: 3rem;
+    border-radius: 30px;
     backdrop-filter: blur(10px);
-    margin: 0px 6px 0px 6px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.profile-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.profile-avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid var(--white);
+    box-shadow: var(--shadow);
+    object-fit: cover;
+    background-color: var(--secondary-color);
+}
+
+.data-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    width: 100%;
+    margin-top: 2rem;
+    text-align: left;
+}
+
+.data-item {
+    background: rgba(255,255,255,0.5);
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.data-item strong {
+    color: var(--primary-color);
+    display: block;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    margin-bottom: 0.3rem;
 }

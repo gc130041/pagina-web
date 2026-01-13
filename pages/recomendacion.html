@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recomendación</title>
+    <title>Centro Educativo</title>
     <link rel="stylesheet" href="../components/styles/variables/variables.css">
     <link rel="stylesheet" href="../components/styles/global/global.css">
     <link rel="stylesheet" href="../components/layout/container/container.css">
@@ -11,16 +11,49 @@
     <link rel="stylesheet" href="../components/layout/footer/footer.css">
     <link rel="stylesheet" href="../components/common/typography/typography.css">
     <link rel="stylesheet" href="../components/sections/content/content.css">
+    <link rel="stylesheet" href="../components/common/buttons/buttons.css">
+    
+    <style>
+        .school-banner {
+            width: 100%;
+            height: 200px;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../components/sections/images/kinal-building.jpg');
+            background-color: var(--primary-color);
+            background-size: cover;
+            background-position: center;
+            border-radius: 15px;
+            margin-bottom: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .feature-card {
+            background: var(--bg-color);
+            padding: 1.5rem;
+            border-radius: 10px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+    </style>
 </head>
 <body>
     <header class="main-header">
         <div class="container nav-flex">
-            <h3>Paginas</h3>
+            <h3>Páginas</h3>
             <nav>
                 <ul class="nav-links">
                     <li><a href="../index.html">Inicio</a></li>
                     <li><a href="biografia.html">Biografía</a></li>
-                    <li><a href="recomendacion.html">Recomendación</a></li>
+                    <li><a href="recomendacion.html" style="color: var(--primary-color);">Recomendación</a></li>
                 </ul>
             </nav>
         </div>
@@ -29,16 +62,48 @@
     <main class="page-section">
         <div class="container">
             <div class="content-box">
-                <h1>Recomendación</h1>
-                <h2>Aspectos a mejorar</h2>
-                <br>1- La página de Kinal podría mejorar visualmente si se agregara un fondo negro o compatibilidad con este<br>
-                <br>2- Se podría agregar una opción de iniciar sesión en Kinal.academy<br>
+                
+                <div class="school-banner">
+                    <h1 style="color: white; border: none; padding: 0; margin: 0; font-size: 3rem;">Centro Educativo Técnico Kinal</h1>
+                </div>
 
-                <h1></h1>
+                <div class="split-layout">
+                    <div class="text-column">
+                        <h2>Sobre la Institución</h2>
+                        <p>Kinal es un centro educativo que se dedica a la formación académica y técnica de jóvenes guatemaltecos. Su misión es formar personas con un alto nivel profesional y humano.</p>
+                        <p>Ubicado estratégicamente para facilitar el acceso a estudiantes de diversas zonas, cuenta con instalaciones modernas y talleres equipados.</p>
+                    </div>
+                    <div class="image-column">
+                        <div class="image-box">
+                            <img src="../components/sections/images/kinal.jpg" alt="Edificio Kinal" onerror="this.style.display='none'; this.parentNode.innerHTML='<div class=\'img-placeholder\'>Foto Fachada</div>'">
+                        </div>
+                    </div>
+                </div>
 
-                <h2>¿Porque?</h2>
-                <br>1- Un fondo negro permitiria un descanso visual del usual fondo blanco<br>
-                <br>2- Agregar una opción de inicio de sesión agilizaria el poder acceder a kinal.academy a los alumnos<br>
+                <h2>Oferta Educativa</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <h3>Bachillerato</h3>
+                        <p>Formación integral preparatoria para la universidad con énfasis en valores.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Carreras Técnicas</h3>
+                        <p>Informática, Electrónica, Mecánica y Dibujo Técnico con equipo de punta.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Kinal Academy</h3>
+                        <p>Plataforma virtual de aprendizaje para complementar la educación presencial.</p>
+                    </div>
+                </div>
+
+                <div style="margin-top: 3rem; text-align: center;">
+                    <h2>¿Por qué estudiar aquí?</h2>
+                    <p style="max-width: 700px; margin: 0 auto 2rem auto;">
+                        El centro ofrece "El trabajo bien hecho" como lema principal, buscando la excelencia no solo en lo técnico sino en la calidad humana de sus egresados.
+                    </p>
+                    
+                    <a href="#" class="btn">Visitar Sitio Oficial</a>
+                </div>
 
             </div>
         </div>

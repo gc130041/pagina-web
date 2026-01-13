@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
+    <title>Inicio - Perfil Personal</title>
     <link rel="stylesheet" href="components/styles/variables/variables.css">
     <link rel="stylesheet" href="components/styles/global/global.css">
     <link rel="stylesheet" href="components/layout/container/container.css">
@@ -16,10 +16,10 @@
 <body>
     <header class="main-header">
         <div class="container nav-flex">
-            <h3>Paginas</h3>
+            <h3>Páginas</h3>
             <nav>
                 <ul class="nav-links">
-                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="index.html" style="color: var(--primary-color);">Inicio</a></li>
                     <li><a href="pages/biografia.html">Biografía</a></li>
                     <li><a href="pages/recomendacion.html">Recomendación</a></li>
                 </ul>
@@ -27,26 +27,45 @@
         </div>
     </header>
 
-    <main class="page-section">
-
+    <main>
         <section class="hero">
+            <div class="hero-content">
+                <div class="profile-header">
+                    <div class="profile-avatar" style="overflow: hidden;">
+                        <img src="components/sections/images/fotoPerfil.jpg" alt="Foto de Perfil" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    
+                    <div>
+                        <h1>Oliver Gabriel Contreras Castellanos</h1>
+                        <h2>Estudiante</h2>
+                        <p>Bienvenido a mi página web, sientete libre de explorar</p>
+                    </div>
+                </div>
 
-            <div class="container">
-            <div class="content-box">
-                <h1>Inicio</h1>
-                <h2>Gustos personales</h2>
-                <br>-Poseo gusto por los videojuegos<br>
-                <br>-Me gusta hacer manualidades<br>
-                <br>-Me gusta cocinar<br>
-                <br>-Interpreto guitarra<br>
+                <div class="data-grid">
+                    <div class="data-item">
+                        <strong>Edad</strong>
+                        <span>17 Años</span>
+                    </div>
+                    <div class="data-item">
+                        <strong>Ubicación</strong>
+                        <span>Ciudad de Guatemala, Zona 7</span>
+                    </div>
+                    <div class="data-item">
+                        <strong>Carrera</strong>
+                        <span>Informática</span>
+                    </div>
+                    <div class="data-item">
+                        <strong>Hobbies</strong>
+                        <span>Videojuegos | Manualidades</span>
+                    </div>
+                </div>
 
-                <h1></h1>
-
+                <div style="margin-top: 2rem;">
+                    <a href="pages/biografia.html" class="btn">Leer Biografía</a>
+                </div>
             </div>
-        </div>
-
         </section>
-
     </main>
 
     <footer class="main-footer">
