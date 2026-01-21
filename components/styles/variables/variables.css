@@ -1,11 +1,16 @@
 :root {
---primary-color: #6c5ce7;
---secondary-color: #a29bfe;
---accent-color: #0984e3;
---bg-color: #f4f7fc;
---text-color: #2d3436;
---white: #ffffff;
---glass: rgba(255, 255, 255, 0.8);
---shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
---font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --primary-color: #6c5ce7;
+    --primary-dark: #4834d4;
+    --secondary-color: #a29bfe;
+    --accent-color: #0984e3;
+    --bg-color: #f4f7fc;
+    --text-color: #2d3436;
+    --text-light: #636e72;
+    --white: #ffffff;
+    --glass: rgba(255, 255, 255, 0.9);
+    --shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+    --shadow-hover: 0 15px 30px rgba(108, 92, 231, 0.2);
+    --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --gradient-primary: linear-gradient(135deg, #6c5ce7 0%, #a29bfe 100%);
+    --gradient-school: linear-gradient(rgba(45, 52, 54, 0.8), rgba(45, 52, 54, 0.8));
 }

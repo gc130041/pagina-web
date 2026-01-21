@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Biografía</title>
+    <title>Biografía Profesional</title>
     <link rel="stylesheet" href="../components/styles/variables/variables.css">
     <link rel="stylesheet" href="../components/styles/global/global.css">
     <link rel="stylesheet" href="../components/layout/container/container.css">
@@ -11,11 +11,12 @@
     <link rel="stylesheet" href="../components/layout/footer/footer.css">
     <link rel="stylesheet" href="../components/common/typography/typography.css">
     <link rel="stylesheet" href="../components/sections/content/content.css">
+    <link rel="stylesheet" href="../components/common/buttons/buttons.css">
 </head>
 <body>
     <header class="main-header">
         <div class="container nav-flex">
-            <h3>Páginas</h3>
+            <h3>Oliver Contreras</h3>
             <nav>
                 <ul class="nav-links">
                     <li><a href="../index.html">Inicio</a></li>
@@ -28,59 +29,99 @@
 
 <main class="page-section">
     <div class="container">
+        
+        <div class="content-box" style="text-align: center; background: var(--bg-color); border: none; box-shadow: none;">
+            <h1>Biografía</h1>
+            <p style="max-width: 600px; margin: 0 auto; color: var(--text-light);">
+                Este es el recorrido de mi vida hasta el día de hoy
+            </p>
+        </div>
+
+        <div class="timeline">
+            <div class="timeline-item left">
+                <div class="timeline-content">
+                    <h3>2008 - El Comienzo</h3>
+                    <p>Nací el 19 de enero en la Ciudad de Guatemala. gozé de una gran infancia con mi familia estando siempre
+                        ahí para mí, ellos me enseñaron la mayoría de los valores que demuestro hoy día
+                    </p>
+                </div>
+            </div>
+            
+            <div class="timeline-item right">
+                <div class="timeline-content">
+                    <h3>Formación</h3>
+                    <p>Actualmente resido en Zona 7 de Guatemala, he estudiado desde los 4 años
+                        cursé preprimaria, primaria y básicos, aprendí mucho durante esos años
+                        desde la escritura básica hasta el respeto hacía mis las demás personas
+                    </p>
+                </div>
+            </div>
+
+            <div class="timeline-item left">
+                <div class="timeline-content">
+                    <h3>Actualidad</h3>
+                    <p>Actualmente me encuentro cursando sexto périto en el centro educativo Kinal
+                        he aprendido a desarrollar programas haciendo uso de Java y páginas web
+                        haciendo uso de html y JavaScript, además de ese aprendizaje he aprendido
+                        también conceptos de moralidad y a aplicar los valores que he aprendido
+                        a lo largo de los años en la vida laboral
+                    </p>
+                </div>
+            </div>
+
+            <div class="timeline-item right">
+                <div class="timeline-content">
+                    <h3>Futuro</h3>
+                    <p>Espero poder graduarme de kinal y entrar a la universidad para eventualmente
+                        poder graduarme también, espero poder obtener un buen trabajo gracias a
+                        los títulos y conocimiento que he ganado y ganaré a lo largo de los años
+                        para así poder construir un hogar
+                    </p>
+                </div>
+            </div>
+        </div>
+
         <div class="content-box">
-            <h1 style="text-align: center;">Mi Historia</h1>
-
-        <div class="split-layout">
-            <div class="text-column">
-                <h2>Acerca de mí</h2>
-                <p>Mi nombre es <strong>Oliver Gabriel Contreras Castellanos</strong>.</p>
-                <p>Soy un estudiante joven apunto de cumplir 18 años</p>
-                <p>nací el 19 de enero del 2008</p>
-                <p>Actualmente resido en Zona 7, de la ciudad de Guatemala</p>
-            </div>
-            <div class="image-column">
-                <div class="image-box">
-                    <img src="../components/sections/images/zonaSiete.jpg" alt="Vista de Zona 7" onerror="this.style.display='none'; this.parentNode.innerHTML='<div class=\'img-placeholder\'>Foto Zona 7</div>'">
+            <h2 class="section-title">Habilidades y Competencias</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h4>Programación</h4>
+                    <p>Java</p>
+                </div>
+                <div class="skill-card">
+                    <h4>Desarrollo Web</h4>
+                    <p>HTML5, CSS3</p>
+                </div>
+                <div class="skill-card">
+                    <h4>Bases de Datos</h4>
+                    <p>MySQL</p>
+                </div>
+                <div class="skill-card">
+                    <h4>Idiomas</h4>
+                    <p>Español, Inglés</p>
                 </div>
             </div>
-        </div>
-
-        <div class="split-layout reverse">
-            <div class="text-column">
-                <h2>Formación Académica</h2>
-                <p>Actualmente me dedico al estudio en el centro educativo técnico laboral <strong>Kinal</strong>.</p>
-                <p>Curso el grado de <strong>6to Perito en Informática</strong>, donde he aprendido sobre programación, redes y bases de datos.</p>
-                <p>Mi meta a futuro es continuar una ingeniería en sistemas en la universidad para especializarme en desarrollo de software.</p>
-            </div>
-            <div class="image-column">
-                <div class="image-box">
-                    <img src="../components/sections/images/informatica.jpg" alt="Laboratorio de Informática" onerror="this.style.display='none'; this.parentNode.innerHTML='<div class=\'img-placeholder\'>Foto Informática</div>'">
+            
+            <div class="split-layout reverse" style="margin-top: 4rem;">
+                <div class="text-column">
+                    <h2>Visión Personal</h2>
+                    <p>Deseo fervientemente cumplir los sueños que quienes me anteceden relegan en mí</p>
+                    <p>Espero poder dejar mi huella en este mundo y así como mantener vivo el recuerdo de mis antepasados, dejar mi propio legado</p>
                 </div>
-            </div>
-        </div>
-
-        <div class="split-layout">
-            <div class="text-column">
-                <h2>Sobre mi futuro</h2>
-                <p>Deseo estudiar en la universidad San Carlos de Guatemala.</p>
-                <p>Espero poder obtener experiencia para mi formación</p>
-                <p>Me gustaría conseguir un buen trabajo</p>
-            </div>
-            <div class="image-column">
-                <div class="image-box">
-                    <img src="../components/sections/images/edificio.JPG" alt="Vista de Zona 7" onerror="this.style.display='none'; this.parentNode.innerHTML='<div class=\'img-placeholder\'>Foto Zona 7</div>'">
+                <div class="image-column">
+                    <div class="image-box">
+                        <img src="../components/sections/images/fotoBiografia.jpg" alt="Oliver Contreras">
+                    </div>
                 </div>
             </div>
         </div>
 
     </div>
-</div>
 </main>
 
 <footer class="main-footer">
     <div class="container">
-        <p>&copy; 2026 Página Web - Trabajo 1</p>
+        <p>&copy; 2026 Oliver Contreras - Trabajo 1</p>
     </div>
 </footer>
 </body>
